@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/include_main_black"
+        android:id="@+id/ly_top"
+        />
+
+    <WebView
+        android:layout_below="@+id/ly_top"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_no_net"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/web_network_error"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_no_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="网络不给力"
+            android:textSize="@dimen/sevenSize"/>
+
+        <Button
+            android:id="@+id/btn_no_net"
+            style="@style/btn_submit"
+            android:text="重新加载"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BaseUtil</string>
+
+    <string name="loading">加载中</string>
+    <string name="submit">确认</string>
+    <string name="cancel">取消</string>
+
+
+
+    <!-- 加载状态相关 -->
+    <string name="view_empty">没有数据~</string>
+    <string name="view_network_error">网络异常~</string>
+    <string name="view_no_network">没有网络~</string>
+
+    <string name="load_success">加载成功</string>
+    <string name="load_fail">加载失败</string>
+</resources>

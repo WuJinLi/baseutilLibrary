@@ -38,7 +38,7 @@ publish {
     userOrg = 'wujinli'
     groupId = 'com.wjl.baseutil'
     artifactId = 'baseutil'
-    version = '1.0.2'
+    version = '1.0.3'
     description = '关于app一些基类的封装'
-    website = "https://github.com/WuJinLi/baseutil"
+    website = "https://github.com/WuJinLi/baseutilLibrary"
 }

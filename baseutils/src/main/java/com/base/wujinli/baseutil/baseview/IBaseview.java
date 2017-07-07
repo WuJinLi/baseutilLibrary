@@ -41,5 +41,5 @@ public interface IBaseview {
 
     public void showToastShort(String res);
 
-
+    public Context getContent();
 }

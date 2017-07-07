@@ -414,6 +414,11 @@ public abstract class BaseActivity extends Activity implements IBaseview {
     }
 
     @Override
+    public Context getContent() {
+        return this;
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         ActivityUtils.removeActivity(this);

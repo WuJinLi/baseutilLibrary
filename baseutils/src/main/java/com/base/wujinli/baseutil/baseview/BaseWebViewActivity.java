@@ -533,6 +533,10 @@ public abstract class BaseWebViewActivity extends Activity implements IBaseview 
             customDialog.show();
         }
 
+    }
 
+    @Override
+    public Context getContent() {
+        return this;
     }
 }

@@ -3,6 +3,7 @@ package com.base.wujinli.baseutil.baseview;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -295,5 +296,10 @@ public class BaseFragment extends Fragment implements IBaseview {
         if (!isHidden()) {
             customDialog.show();
         }
+    }
+
+    @Override
+    public Context getContent() {
+        return this.getActivity();
     }
 }
